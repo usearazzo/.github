@@ -21,18 +21,31 @@ Author, validate, execute, and ship multi-step **Arazzo** workflows — then com
   <a href="https://www.openapis.org/"><img height="36" alt="OpenAPI" src="https://raw.githubusercontent.com/usearazzo/.github/main/profile/assets/openapi-logo.png" /></a>
 </div>
 
-## Products
+## The stack
 
-UseArazzo builds the full stack for API workflows — from a low-level Arazzo parser all the way up to compiled MCP servers. Everything ships from one unified monorepo, [`arazzo-toolkit`](https://github.com/usearazzo/arazzo-toolkit), under the `@usearazzo/*` namespace.
+UseArazzo builds the full stack for API workflows — from a low-level Arazzo parser all the way up to embeddable UI components. Everything ships from one unified monorepo, [`arazzo-toolkit`](https://github.com/usearazzo/arazzo-toolkit), under the `@usearazzo/*` namespace — free and open source under Apache 2.0.
 
-| Product | Description |
-| :------ | :---------- |
+### Available now
+
+| Layer | Description |
+| :---- | :---------- |
 | [**Parser**](https://github.com/usearazzo/arazzo-toolkit) | `@usearazzo/parser` — reads Arazzo documents into a lossless semantic model. Error-recovery capable, reference-aware, and honest about what it can't resolve. |
+| [**Resolver**](https://github.com/usearazzo/arazzo-toolkit) | `@usearazzo/resolver` — resolves references and external source descriptions across files and URLs into one fully dereferenced document. |
+| [**Validator**](https://github.com/usearazzo/arazzo-toolkit) | `@usearazzo/validator` — checks documents against the Arazzo specification: structural rules for document shape, semantic rules for expressions and cross-step references. |
+| [**Bundler**](https://github.com/usearazzo/arazzo-toolkit) | `@usearazzo/bundler` — inlines JSON Schema references into a single document. Source descriptions stay external by design — Arazzo points at them by URL rather than embedding them. |
 | [**Runner**](https://github.com/usearazzo/arazzo-toolkit) | `@usearazzo/runner` — executes workflows step by step: criteria evaluation, output mapping, failure actions, and retries, with a full trace of every decision made. |
-| [**CLI**](https://github.com/usearazzo/arazzo-toolkit) | `usearazzo-cli` — validate and execute workflows on your machine and in CI. No account, no upload, no waiting on a hosted service. |
-| [**Utility Specs**](https://api.usearazzo.com) | Hosted, versioned transformations at `api.usearazzo.com/utils/...`. Reshape data between steps as an explicit, reviewable step instead of an inline script. |
-| [**MCP Compiler**](https://modelcontextprotocol.io/) | Compiles a validated workflow into a production-ready Model Context Protocol server — one typed tool per workflow, for Claude, Cursor, Windsurf, and anything else that speaks MCP. |
-| [**AI Design Skills**](https://usearazzo.com) | Lets AI agents author and validate workflows natively from natural language, emitting a standard `.arazzo.yaml` that's parsed and checked before you ever see it. |
+| [**UI**](https://github.com/usearazzo/arazzo-toolkit) | `@usearazzo/ui` — embeddable components for rendering and inspecting Arazzo workflows inside your own application. |
+
+### On the roadmap
+
+| Layer | Description |
+| :---- | :---------- |
+| **Language Service** | An LSP-compatible library bringing Arazzo intelligence to any editor or tool — validation, completion, hover, go-to-definition, and find references. |
+| **Editor** | A browser-based editor for authoring and validating Arazzo workflows with real-time feedback. |
+| **VS Code Extension** | Arazzo authoring inside VS Code — real-time validation, semantic linting, autocompletion, and live preview. |
+| **AI Design Skills** | Lets AI agents author and validate workflows natively from natural language, emitting a standard `.arazzo.yaml` that's parsed and checked before you ever see it. |
+| **MCP Compiler** | Compiles a validated workflow into a production-ready [Model Context Protocol](https://modelcontextprotocol.io/) server — one typed tool per workflow, for Claude, Cursor, Windsurf, and anything else that speaks MCP. |
+| **Arazzo Transformers** | Explicit, versioned transformation steps for reshaping data between steps — declared in the document and reviewable in a pull request, instead of smuggled in as inline scripts. |
 
 ## Why UseArazzo
 
@@ -42,12 +55,12 @@ A single API call is a solved problem — everything above it isn't. OpenAPI des
 - **The standard is the product** — Arazzo implemented as specified, with contributions upstream rather than a private dialect only our tools understand.
 - **Portable artifacts** — plain Arazzo documents in your repository, driven from the CLI, your CI pipeline, or an agent. If you stop using us, your workflows keep working.
 
-### Local-first by default
+### Free and open source
 
 <p align="left">
-  <img alt="Deterministic" src="https://img.shields.io/badge/Deterministic-5E8A1F?style=for-the-badge" />
-  <img alt="Runs locally" src="https://img.shields.io/badge/Runs_locally-5E8A1F?style=for-the-badge" />
-  <img alt="No accounts" src="https://img.shields.io/badge/No_accounts-17210D?style=for-the-badge" />
+  <img alt="Open source" src="https://img.shields.io/badge/Open_source-5E8A1F?style=for-the-badge" />
+  <img alt="Apache 2.0" src="https://img.shields.io/badge/Apache_2.0-5E8A1F?style=for-the-badge" />
+  <img alt="Runs locally" src="https://img.shields.io/badge/Runs_locally-17210D?style=for-the-badge" />
   <img alt="No lock-in" src="https://img.shields.io/badge/No_lock--in-17210D?style=for-the-badge" />
 </p>
 
