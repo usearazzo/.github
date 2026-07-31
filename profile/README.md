@@ -12,12 +12,6 @@ Author, validate, execute, and ship multi-step **Arazzo** workflows — then com
 [![Toolkit](https://img.shields.io/badge/arazzo--toolkit-17210D?style=for-the-badge&logo=github&logoColor=white)](https://github.com/usearazzo/arazzo-toolkit)
 [![Discussions](https://img.shields.io/badge/Discussions-17210D?style=for-the-badge&logo=github&logoColor=white)](https://github.com/orgs/usearazzo/discussions)
 
-<br/>
-
-<a href="https://usearazzo.com">
-  <img width="160" alt="UseArazzo" src="https://raw.githubusercontent.com/usearazzo/.github/main/profile/assets/logo.png" />
-</a>
-
 </div>
 
 <br/>
