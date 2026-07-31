@@ -2,7 +2,7 @@
 
 <h1>UseArazzo</h1>
 
-### The Operating System for API workflows
+### The Foundational Operating System for API Workflows
 
 Author, validate, execute, and ship multi-step **Arazzo** workflows — then compile them into deterministic tools your AI agents can trust.
 
@@ -31,9 +31,10 @@ UseArazzo builds the full stack for API workflows — from a low-level Arazzo pa
 | :---- | :---------- |
 | [**Parser**](https://github.com/usearazzo/arazzo-toolkit) | `@usearazzo/parser` — reads Arazzo documents into a lossless semantic model. Error-recovery capable, reference-aware, and honest about what it can't resolve. |
 | [**Resolver**](https://github.com/usearazzo/arazzo-toolkit) | `@usearazzo/resolver` — resolves references and external source descriptions across files and URLs into one fully dereferenced document. |
-| [**Validator**](https://github.com/usearazzo/arazzo-toolkit) | `@usearazzo/validator` — checks documents against the Arazzo specification: structural rules for document shape, semantic rules for expressions and cross-step references. |
 | [**Bundler**](https://github.com/usearazzo/arazzo-toolkit) | `@usearazzo/bundler` — inlines JSON Schema references into a single document. Source descriptions stay external by design — Arazzo points at them by URL rather than embedding them. |
+| [**Validator**](https://github.com/usearazzo/arazzo-toolkit) | `@usearazzo/validator` — checks documents against the Arazzo specification: structural rules for document shape, semantic rules for expressions and cross-step references. |
 | [**Runner**](https://github.com/usearazzo/arazzo-toolkit) | `@usearazzo/runner` — executes workflows step by step: criteria evaluation, output mapping, failure actions, and retries, with a full trace of every decision made. |
+| [**CLI**](https://github.com/usearazzo/arazzo-toolkit) | `@usearazzo/cli` — one command-line interface across the whole toolchain: resolve, bundle, validate, and run workflows on your machine and in CI. |
 | [**UI**](https://github.com/usearazzo/arazzo-toolkit) | `@usearazzo/ui` — embeddable components for rendering and inspecting Arazzo workflows inside your own application. |
 
 ### On the roadmap
@@ -43,9 +44,10 @@ UseArazzo builds the full stack for API workflows — from a low-level Arazzo pa
 | **Language Service** | An LSP-compatible library bringing Arazzo intelligence to any editor or tool — validation, completion, hover, go-to-definition, and find references. |
 | **Editor** | A browser-based editor for authoring and validating Arazzo workflows with real-time feedback. |
 | **VS Code Extension** | Arazzo authoring inside VS Code — real-time validation, semantic linting, autocompletion, and live preview. |
-| **AI Design Skills** | Lets AI agents author and validate workflows natively from natural language, emitting a standard `.arazzo.yaml` that's parsed and checked before you ever see it. |
-| **MCP Compiler** | Compiles a validated workflow into a production-ready [Model Context Protocol](https://modelcontextprotocol.io/) server — one typed tool per workflow, for Claude, Cursor, Windsurf, and anything else that speaks MCP. |
-| **Arazzo Transformers** | Explicit, versioned transformation steps for reshaping data between steps — declared in the document and reviewable in a pull request, instead of smuggled in as inline scripts. |
+| **Agent Skills** | A set of task-shaped skills teaching agents to work the toolchain — authoring workflows from an API description, validating and fixing them, and reading a run trace when a step fails. |
+| **MCP Server** | A generic [Model Context Protocol](https://modelcontextprotocol.io/) server exposing validation and execution over any Arazzo document, so agents can check and run workflows with no build step. |
+| **MCP Compiler** | Compiles a specific workflow into a dedicated MCP server — one typed tool per workflow, with real input schemas, for production agent deployments. |
+| **Arazzo Transformers** | Explicit, versioned transformations for reshaping data between steps — declared as ordinary API calls the toolchain can validate, rather than arbitrary code that needs a sandbox to run. |
 
 ## Why UseArazzo
 
