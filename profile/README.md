@@ -23,7 +23,7 @@ Author, validate, execute, and ship multi-step **Arazzo** workflows — then com
 
 ## The stack
 
-UseArazzo builds the full stack for API workflows — from a low-level Arazzo parser all the way up to embeddable UI components. Everything ships from one unified monorepo, [`arazzo-toolkit`](https://github.com/usearazzo/arazzo-toolkit), under the `@usearazzo/*` namespace — free and open source under Apache 2.0.
+UseArazzo builds the full stack for API workflows — from a low-level Arazzo parser all the way up to embeddable UI components. Free and open source under Apache 2.0, published under the `@usearazzo/*` namespace.
 
 ### Available now
 
