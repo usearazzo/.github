@@ -37,16 +37,16 @@ The toolkit is pre-1.0 and APIs may change before the stable release.
 
 ### Validate and run workflows
 
-| Package | Description |
-| :------ | :---------- |
-| [**CLI**](https://github.com/usearazzo/arazzo-toolkit) | `@usearazzo/cli` — one command-line interface across the toolchain: validate and run workflows on your machine and in CI. Start here. |
-| [**Validator**](https://github.com/usearazzo/arazzo-toolkit) | `@usearazzo/validator` — the same validation the CLI runs, as a library: every violation against the Arazzo specification, with the location that caused it. |
-| [**Runner**](https://github.com/usearazzo/arazzo-toolkit) | `@usearazzo/runner` — executes workflows step by step: criteria evaluation, output mapping, failure actions, and retries, returning a per-step record of the run. Reach for it when you want execution embedded in your own program. |
+| Package                                                                                | Description |
+| :------------------------------------------------------------------------------------- | :---------- |
+| [**CLI**](https://github.com/usearazzo/arazzo-toolkit/tree/main/packages/cli)          | `@usearazzo/cli` — one command-line interface across the toolchain: validate and run workflows on your machine and in CI. Start here. |
+| [**Validator**](https://github.com/usearazzo/arazzo-toolkit/tree/main/packages/parser) | `@usearazzo/validator` — the same validation the CLI runs, as a library: every violation against the Arazzo specification, with the location that caused it. |
+| [**Runner**](https://github.com/usearazzo/arazzo-toolkit/tree/main/packages/runner)    | `@usearazzo/runner` — executes workflows step by step: criteria evaluation, output mapping, failure actions, and retries, returning a per-step record of the run. Reach for it when you want execution embedded in your own program. |
 
 Lower-level packages are published for anyone building Arazzo tooling of their own:
 
-- [`@usearazzo/parser`](https://github.com/usearazzo/arazzo-toolkit)
-- [`@usearazzo/resolver`](https://github.com/usearazzo/arazzo-toolkit)
+- [`@usearazzo/parser`](https://github.com/usearazzo/arazzo-toolkit/tree/main/packages/parser)
+- [`@usearazzo/resolver`](https://github.com/usearazzo/arazzo-toolkit/tree/main/packages/resolver)
 
 ### Compatibility
 
