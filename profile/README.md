@@ -79,13 +79,13 @@ A single API call is a solved problem, and everything above it isn't. OpenAPI de
 
 | Layer | Description |
 | :---- | :---------- |
-| **Language Service** | An LSP-compatible library bringing Arazzo intelligence to any editor or tool — validation, completion, hover, go-to-definition, and find references. |
+| **Language&nbsp;Service** | An LSP-compatible library bringing Arazzo intelligence to any editor or tool — validation, completion, hover, go-to-definition, and find references. |
 | **Editor** | A browser-based editor for authoring and validating Arazzo workflows with real-time feedback. |
-| **VS Code Extension** | Arazzo authoring inside VS Code — real-time validation, semantic linting, autocompletion, and live preview. |
-| **Agent Skills** | A set of task-shaped skills teaching agents to work the toolchain — authoring workflows from an API description, validating and fixing them, and reading a run trace when a step fails. |
-| **MCP Server** | A generic [Model Context Protocol](https://modelcontextprotocol.io/) server exposing validation and execution over any Arazzo document, so agents can check and run workflows with no build step. |
-| **MCP Compiler** | Compiles a specific workflow into a dedicated MCP server — one typed tool per workflow, with real input schemas, for production agent deployments. |
-| **Arazzo Transformers** | Explicit, versioned transformations for reshaping data between steps — declared as ordinary API calls the toolchain can validate, rather than arbitrary code that needs a sandbox to run. |
+| **VS&nbsp;Code&nbsp;Extension** | Arazzo authoring inside VS Code — real-time validation, semantic linting, autocompletion, and live preview. |
+| **Agent&nbsp;Skills** | A set of task-shaped skills teaching agents to work the toolchain — authoring workflows from an API description, validating and fixing them, and reading a run trace when a step fails. |
+| **MCP&nbsp;Server** | A generic [Model Context Protocol](https://modelcontextprotocol.io/) server exposing validation and execution over any Arazzo document, so agents can check and run workflows with no build step. |
+| **MCP&nbsp;Compiler** | Compiles a specific workflow into a dedicated MCP server — one typed tool per workflow, with real input schemas, for production agent deployments. |
+| **Arazzo&nbsp;Transformers** | Explicit, versioned transformations for reshaping data between steps — declared as ordinary API calls the toolchain can validate, rather than arbitrary code that needs a sandbox to run. |
 
 ## Who we are
 
