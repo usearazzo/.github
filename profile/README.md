@@ -82,6 +82,7 @@ A single API call is a solved problem, and everything above it isn't. OpenAPI de
 | **Language&nbsp;Service** | An LSP-compatible library bringing Arazzo intelligence to any editor or tool — validation, completion, hover, go-to-definition, and find references. |
 | **Editor** | A browser-based editor for authoring and validating Arazzo workflows with real-time feedback. |
 | **VS&nbsp;Code&nbsp;Extension** | Arazzo authoring inside VS Code — real-time validation, semantic linting, autocompletion, and live preview. |
+| **GitHub&nbsp;Actions** | Validation and run results reported where the work happens — violations annotated on the diff, the step-by-step run trace rendered into the job summary, and the check status driven by step outcomes rather than a single pass or fail. |
 | **Agent&nbsp;Skills** | A set of task-shaped skills teaching agents to work the toolchain — authoring workflows from an API description, validating and fixing them, and reading a run trace when a step fails. |
 | **MCP&nbsp;Server** | A generic [Model Context Protocol](https://modelcontextprotocol.io/) server exposing validation and execution over any Arazzo document, so agents can check and run workflows with no build step. |
 | **MCP&nbsp;Compiler** | Compiles a specific workflow into a dedicated MCP server — one typed tool per workflow, with real input schemas, for production agent deployments. |
