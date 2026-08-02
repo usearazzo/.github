@@ -23,7 +23,7 @@ A JavaScript/TypeScript toolkit for **Arazzo**, the OpenAPI Initiative's specifi
 
 ## What it does
 
-Plenty of tools will tell you whether an [Arazzo](https://spec.openapis.org/arazzo/latest.html) document is well formed. Far fewer will run it. UseArazzo does both:
+Plenty of tools will tell you whether an [Arazzo](https://spec.openapis.org/arazzo/latest.html) document is well formed. Far fewer will run it. UseArazzo does both, and tells you what happened:
 
 1. **Validate** the document against the Arazzo specification.
 2. **Run** the workflow against live APIs.
@@ -42,7 +42,11 @@ The toolkit is pre-1.0 and APIs may change before the stable release.
 | [**CLI**](https://github.com/usearazzo/arazzo-toolkit) | `@usearazzo/cli` — one command-line interface across the toolchain: validate and run workflows on your machine and in CI. Start here. |
 | [**Runner**](https://github.com/usearazzo/arazzo-toolkit) | `@usearazzo/runner` — executes workflows step by step: criteria evaluation, output mapping, failure actions, and retries, returning a per-step record of the run. Reach for it when you want execution embedded in your own program. |
 
-Three lower-level packages are published for anyone building Arazzo tooling of their own: [`@usearazzo/validator`](https://github.com/usearazzo/arazzo-toolkit), [`@usearazzo/parser`](https://github.com/usearazzo/arazzo-toolkit), and [`@usearazzo/resolver`](https://github.com/usearazzo/arazzo-toolkit).
+Lower-level packages are published for anyone building Arazzo tooling of their own:
+
+- [`@usearazzo/validator`](https://github.com/usearazzo/arazzo-toolkit)
+- [`@usearazzo/parser`](https://github.com/usearazzo/arazzo-toolkit)
+- [`@usearazzo/resolver`](https://github.com/usearazzo/arazzo-toolkit)
 
 ### Compatibility
 
