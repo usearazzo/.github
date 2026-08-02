@@ -87,13 +87,9 @@ A single API call is a solved problem, and everything above it isn't. OpenAPI de
 
 UseArazzo was founded by [Vladimir Gorej](https://vladimirgorej.com/) and [Francesco Tumanischvili](https://github.com/frantuma), two industry veterans with over 15 years of combined experience building and maintaining core tools in the Swagger/OpenAPI ecosystem.
 
-## Join the discussion
+## Get in touch
 
-Have questions or want to share your thoughts? Join our [Discussions](https://github.com/orgs/usearazzo/discussions) to engage with the community.
-
-## Get help from the maintainers
-
-UseArazzo is free to use. We can help developers and teams adopt Arazzo, standardize workflow specifications, and ship agent integrations that hold up in production.
+Questions, ideas, and bug reports belong in [Discussions](https://github.com/orgs/usearazzo/discussions). For anything else, reach the maintainers directly.
 
 - **Website**: https://usearazzo.com
 - **Email**: info@usearazzo.com
