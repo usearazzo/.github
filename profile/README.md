@@ -54,7 +54,7 @@ Lower-level packages are published for anyone building Arazzo tooling of their o
 | :------- | :------- | :------- | :-- |
 | Workflow Document: [Arazzo](https://spec.openapis.org/arazzo/latest.html) | [1.0.0](https://spec.openapis.org/arazzo/v1.0.0), [1.0.1](https://spec.openapis.org/arazzo/v1.0.1), [1.1.0](https://spec.openapis.org/arazzo/v1.1.0) | yes | yes |
 | Source Description: [OpenAPI](https://www.openapis.org/) | [2.0](https://spec.openapis.org/oas/v2.0), [3.0.x](https://spec.openapis.org/oas/v3.0.4), [3.1.x](https://spec.openapis.org/oas/v3.1.2) | yes | yes |
-| Source Description: [Arazzo](https://spec.openapis.org/arazzo/latest.html) | [1.0.0](https://spec.openapis.org/arazzo/v1.0.0), [1.0.1](https://spec.openapis.org/arazzo/v1.0.1), [1.1.0](https://spec.openapis.org/arazzo/v1.1.0) | yes | no |
+| Source Description: [Arazzo](https://spec.openapis.org/arazzo/latest.html) | [1.0.0](https://spec.openapis.org/arazzo/v1.0.0), [1.0.1](https://spec.openapis.org/arazzo/v1.0.1), [1.1.0](https://spec.openapis.org/arazzo/v1.1.0) | yes | yes |
 | Source Description: [AsyncAPI](https://www.asyncapi.com/) | any | no | no |
 
 ## Why UseArazzo
