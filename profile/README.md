@@ -79,6 +79,9 @@ A single API call is a solved problem, and everything above it isn't. OpenAPI de
 
 | Layer | Description |
 | :---- | :---------- |
+| **Run&nbsp;Workflows&nbsp;in&nbsp;One&nbsp;Call** | Next for the Runner: a single function that runs a workflow, instead of wiring its four building blocks by hand. |
+| **Run&nbsp;Workflows&nbsp;from&nbsp;the&nbsp;CLI** | A command in the CLI that runs a workflow and prints each step as it passes or fails, with the result of each success criterion. |
+| **Live&nbsp;Run&nbsp;Events** | An event stream for following a run as it happens: progress in the terminal, logs, and OpenTelemetry traces. |
 | **Language&nbsp;Service** | An LSP-compatible library bringing Arazzo intelligence to any editor or tool — validation, completion, hover, go-to-definition, and find references. |
 | **Editor** | A browser-based editor for authoring and validating Arazzo workflows with real-time feedback. |
 | **VS&nbsp;Code&nbsp;Extension** | Arazzo authoring inside VS Code — real-time validation, semantic linting, autocompletion, and live preview. |
