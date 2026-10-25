@@ -29,7 +29,7 @@ Plenty of tools will tell you whether an [Arazzo](https://spec.openapis.org/araz
 2. **Run** the workflow against live APIs.
 3. **Read the trace** of each step in run order: whether it succeeded, which action was selected, and how many attempts it took, alongside the workflow's outputs and final status. What happened at each step, not just a pass or fail at the end.
 
-Validate from the command line with `@usearazzo/cli`, on your machine or in CI. Run workflows from your own code with `@usearazzo/runner`; a CLI command to run them comes next.
+Validate from the command line with `@usearazzo/cli`, on your machine or in CI. Run workflows from your own code with `@usearazzo/runner`.
 
 <a href="https://usearazzo.com/runner/"><img alt="A terminal session: start a Petstore with Docker, open a Node.js REPL, paste code that builds a runner from @usearazzo/runner, and run the authenticateAndOrderPet workflow against the Petstore; all five steps pass and the status is completed" src="https://raw.githubusercontent.com/usearazzo/arazzo-toolkit/main/packages/runner/assets/run-demo.svg"></a>
 
@@ -39,7 +39,7 @@ The toolkit is pre-1.0 and APIs may change before the stable release.
 
 | Package                                                                                   | Description |
 |:------------------------------------------------------------------------------------------| :---------- |
-| [**CLI**](https://github.com/usearazzo/arazzo-toolkit/tree/main/packages/cli)             | `@usearazzo/cli` — one command-line interface across the toolchain: validate workflows on your machine and in CI, with a command to run them coming next. Start here. |
+| [**CLI**](https://github.com/usearazzo/arazzo-toolkit/tree/main/packages/cli)             | `@usearazzo/cli` — one command-line interface across the toolchain: validate workflows on your machine and in CI. Start here. |
 | [**Validator**](https://github.com/usearazzo/arazzo-toolkit/tree/main/packages/validator) | `@usearazzo/validator` — the same validation the CLI runs, as a library: every violation against the Arazzo specification, with the location that caused it. |
 | [**Runner**](https://github.com/usearazzo/arazzo-toolkit/tree/main/packages/runner)       | `@usearazzo/runner` — executes workflows step by step: criteria evaluation, output mapping, failure actions, and retries, returning a per-step record of the run. Reach for it when you want execution embedded in your own program. |
 
